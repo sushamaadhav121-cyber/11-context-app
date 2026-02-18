@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { ThemeContext } from '../contexts/ThemeContext'
 
 export default function Navbar() {
-  let {theme,setTheme,themeStyle}=useContext(ThemeContext)
+  let { toggleTheme } = useContext(ThemeContext);
   return (
     <div>
       <nav class={`navbar navbar-expand-lg bg-${theme}`} data-bs-theme={theme}>
